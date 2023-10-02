@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Table</title>
+</head>
+<style>
+    table,
+    th,
+    td {
+        border: solid black 1px;
+    }
+</style>
+
+<body>
+    <table>
+        <tr>
+            <td></td>
+            <th>Lunedì</th>
+            <th>Martedì</th>
+            <th>Mercoledì</th>
+        </tr>
+        <tr>
+            <th id="fr">9-10</th>
+            <td rowspan="2" headers="fr sn">Tecnologie Web</td>
+            <td headers="fr">Analisi</td>
+            <td rowspan="2" headers="fr sn">Sistemi Multimediali</td>
+        </tr>
+        <tr>
+            <th id="sn">10-11</th>
+            <td rowspan="2" headers="sn rd">Sistemi Multimediali</td>
+        </tr>
+        <tr>
+            <th id="rd">11-12</th>
+            <td headers="rd">Algebra</td>
+            <td headers="rd">Fisica</td>
+        </tr>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrazione</title>
+</head>
+
+<body>
+    <header>
+        <h1>Contatti</h1>
+    </header>
+    <main>
+        <form action="#" method="post">
+            <section>
+                <h2>Informazioni Anagrafiche</h2>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Nome">
+                <label for="cognome">Cognome:</label>
+                <input type="text" id="cognome" name="cognome" placeholder="Cognome">
+                <label for="cf">Codice Fiscale:</label>
+                <input type="text" id="cf" name="cf" maxlength="16" minlength="16" placeholder="Codice Fiscale">
+                <label for="data">Data di Nascita:</label>
+                <input type="date" id="data" name="dataNascita">
+                <label for="luogo">Luogo di nascita:</label>
+                <input type="text" id="luogo" name="luogoNascita" placeholder="Luogo di Nascita">
+                <label for="indir">Indirizzo:</label>
+                <input type="text" id="indir" name="indirizzo" placeholder="Indirizzo">
+            </section>
+            <section>
+                <h2>Preferenze</h2>
+                <fieldset>
+                    <legend>Tipo di Assicurazione:</legend>
+                    <input type="radio" name="tipo" id="flvl">
+                    <label for="flvl">Primo Livello</label>
+                    <input type="radio" name="tipo" id="slvl">
+                    <label for="slvl">Secondo Livello</label>
+                    <input type="radio" name="tipo" id="tlvl">
+                    <label for="tlvl">Terzo Livello</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Mezzo Preferito:</legend>
+                    <!-- vedi bene per la select se serve l'attributo form -->
+                    <select name="mezzo" id="mezzo">
+                        <option value=""></option>
+                    </select>
+                </fieldset>
+                <label for="descr">Descrizione:</label>
+                <textarea id="descr" name="descrizione" rows="4" cols="50" placeholder="Inserisci la descrizione"></textarea>
+            </section>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Cancella">
+        </form>
+    </main>
+</body>
+
+</html>

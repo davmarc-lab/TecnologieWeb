@@ -14,23 +14,42 @@
     <main>
         <form action="#" method="post">
             <section>
-                <h2>Informazioni Anagrafiche</h2>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" placeholder="Nome">
-                <label for="cognome">Cognome:</label>
-                <input type="text" id="cognome" name="cognome" placeholder="Cognome">
-                <label for="cf">Codice Fiscale:</label>
-                <input type="text" id="cf" name="cf" maxlength="16" minlength="16" placeholder="Codice Fiscale">
-                <label for="data">Data di Nascita:</label>
-                <input type="date" id="data" name="dataNascita">
-                <label for="luogo">Luogo di nascita:</label>
-                <input type="text" id="luogo" name="luogoNascita" placeholder="Luogo di Nascita">
-                <label for="indir">Indirizzo:</label>
-                <input type="text" id="indir" name="indirizzo" placeholder="Indirizzo">
-            </section>
-            <section>
-                <h2>Preferenze</h2>
                 <fieldset>
+                    <legend>
+                        Informazioni Anagrafiche
+                    </legend>
+                    <ul>
+                        <li>
+                            <label for="nome">Nome:</label>
+                            <input type="text" id="nome" name="nome" placeholder="Nome">
+                        </li>
+                        <li>
+                            <label for="cognome">Cognome:</label>
+                            <input type="text" id="cognome" name="cognome" placeholder="Cognome">
+                        </li>
+                        <li>
+                            <label for="cf">Codice Fiscale:</label>
+                            <input type="text" id="cf" name="cf" maxlength="16" minlength="16" placeholder="Codice Fiscale">
+                        </li>
+                        <li>
+                            <label for="data">Data di Nascita:</label>
+                            <input type="date" id="data" name="dataNascita">
+                        </li>
+                        <li>
+                            <label for="luogo">Luogo di nascita:</label>
+                            <input type="text" id="luogo" name="luogoNascita" placeholder="Luogo di Nascita">
+                        </li>
+                        <li>
+                            <label for="indir">Indirizzo:</label>
+                            <input type="text" id="indir" name="indirizzo" placeholder="Indirizzo">
+                        </li>
+                    </ul>
+                </fieldset>
+            </section>
+            <fieldset>
+                <legend>
+                    Preferenze
+                </legend>
                     <legend>Tipo di Assicurazione:</legend>
                     <input type="radio" name="tipo" id="flvl">
                     <label for="flvl">Primo Livello</label>
@@ -38,8 +57,8 @@
                     <label for="slvl">Secondo Livello</label>
                     <input type="radio" name="tipo" id="tlvl">
                     <label for="tlvl">Terzo Livello</label>
-                </fieldset>
-                <fieldset>
+            </fieldset>
+            <!-- sposta tutto sopra --> 
                     <legend>Mezzo Preferito:</legend>
                     <!-- vedi bene per la select se serve l'attributo form -->
                     <select name="mezzo" id="mezzo">
@@ -48,12 +67,10 @@
                         <option value="bicicletta">Bicicletta</option>
                         <option value="monopattino">Monopattino</option>
                     </select>
-                </fieldset>
                 <label for="haMacchina">Automunito?</label>
                 <input type="checkbox" name="haMacchina" id="haMacchina">
                 <label for="descr">Descrizione:</label>
                 <textarea id="descr" name="descrizione" rows="4" cols="50" placeholder="Inserisci la descrizione"></textarea>
-            </section>
             <input type="submit" value="Submit">
             <input type="reset" value="Cancella">
         </form>

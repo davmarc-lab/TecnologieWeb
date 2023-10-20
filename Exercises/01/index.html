@@ -1,80 +1,111 @@
 <!DOCTYPE html>
 <html lang="it">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Registrazione</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrazione</title>
-</head>
-
-<body>
-    <header>
-        <h1>Contatti</h1>
-    </header>
-    <main>
-        <form action="#" method="post">
-            <section>
+    <body>
+        <header>
+            <h1>Contatti</h1>
+        </header>
+        <main>
+            <form action="#" method="post">
+                <section>
+                    <fieldset>
+                        <legend>Informazioni Anagrafiche</legend>
+                        <ul>
+                            <li>
+                                <label for="nome">Nome:</label>
+                                <input
+                                    type="text"
+                                    id="nome"
+                                    name="nome"
+                                    placeholder="Nome"
+                                />
+                            </li>
+                            <li>
+                                <label for="cognome">Cognome:</label>
+                                <input
+                                    type="text"
+                                    id="cognome"
+                                    name="cognome"
+                                    placeholder="Cognome"
+                                />
+                            </li>
+                            <li>
+                                <label for="cf">Codice Fiscale:</label>
+                                <input
+                                    type="text"
+                                    id="cf"
+                                    name="cf"
+                                    maxlength="16"
+                                    minlength="16"
+                                    placeholder="Codice Fiscale"
+                                />
+                            </li>
+                            <li>
+                                <label for="data">Data di Nascita:</label>
+                                <input
+                                    type="date"
+                                    id="data"
+                                    name="dataNascita"
+                                />
+                            </li>
+                            <li>
+                                <label for="luogo">Luogo di nascita:</label>
+                                <input
+                                    type="text"
+                                    id="luogo"
+                                    name="luogoNascita"
+                                    placeholder="Luogo di Nascita"
+                                />
+                            </li>
+                            <li>
+                                <label for="indir">Indirizzo:</label>
+                                <input
+                                    type="text"
+                                    id="indir"
+                                    name="indirizzo"
+                                    placeholder="Indirizzo"
+                                />
+                            </li>
+                        </ul>
+                    </fieldset>
+                </section>
                 <fieldset>
-                    <legend>
-                        Informazioni Anagrafiche
-                    </legend>
-                    <ul>
-                        <li>
-                            <label for="nome">Nome:</label>
-                            <input type="text" id="nome" name="nome" placeholder="Nome">
-                        </li>
-                        <li>
-                            <label for="cognome">Cognome:</label>
-                            <input type="text" id="cognome" name="cognome" placeholder="Cognome">
-                        </li>
-                        <li>
-                            <label for="cf">Codice Fiscale:</label>
-                            <input type="text" id="cf" name="cf" maxlength="16" minlength="16" placeholder="Codice Fiscale">
-                        </li>
-                        <li>
-                            <label for="data">Data di Nascita:</label>
-                            <input type="date" id="data" name="dataNascita">
-                        </li>
-                        <li>
-                            <label for="luogo">Luogo di nascita:</label>
-                            <input type="text" id="luogo" name="luogoNascita" placeholder="Luogo di Nascita">
-                        </li>
-                        <li>
-                            <label for="indir">Indirizzo:</label>
-                            <input type="text" id="indir" name="indirizzo" placeholder="Indirizzo">
-                        </li>
-                    </ul>
-                </fieldset>
-            </section>
-            <fieldset>
-                <legend>
-                    Preferenze
-                </legend>
+                    <legend>Preferenze</legend>
                     <legend>Tipo di Assicurazione:</legend>
-                    <input type="radio" name="tipo" id="flvl">
+                    <input type="radio" name="tipo" id="flvl" />
                     <label for="flvl">Primo Livello</label>
-                    <input type="radio" name="tipo" id="slvl">
+                    <input type="radio" name="tipo" id="slvl" />
                     <label for="slvl">Secondo Livello</label>
-                    <input type="radio" name="tipo" id="tlvl">
+                    <input type="radio" name="tipo" id="tlvl" />
                     <label for="tlvl">Terzo Livello</label>
-            </fieldset>
-            <!-- sposta tutto sopra --> 
-                    <legend>Mezzo Preferito:</legend>
-                    <!-- vedi bene per la select se serve l'attributo form -->
-                    <select name="mezzo" id="mezzo">
-                        <option value="automobile">Automobile</option>
-                        <option value="moto">Moto</option>
-                        <option value="bicicletta">Bicicletta</option>
-                        <option value="monopattino">Monopattino</option>
-                    </select>
+                </fieldset>
+                <!-- sposta tutto sopra -->
+                <legend>Mezzo Preferito:</legend>
+                <!-- vedi bene per la select se serve l'attributo form -->
+                <select name="mezzo" id="mezzo">
+                    <option value="automobile">Automobile</option>
+                    <option value="moto">Moto</option>
+                    <option value="bicicletta">Bicicletta</option>
+                    <option value="monopattino">Monopattino</option>
+                </select>
                 <label for="haMacchina">Automunito?</label>
-                <input type="checkbox" name="haMacchina" id="haMacchina">
+                <input type="checkbox" name="haMacchina" id="haMacchina" />
                 <label for="descr">Descrizione:</label>
-                <textarea id="descr" name="descrizione" rows="4" cols="50" placeholder="Inserisci la descrizione"></textarea>
-            <input type="submit" value="Submit">
-            <input type="reset" value="Cancella">
-        </form>
-    </main>
-</body>
-
+                <textarea
+                    id="descr"
+                    name="descrizione"
+                    rows="4"
+                    cols="50"
+                    placeholder="Inserisci la descrizione"
+                ></textarea>
+                <input type="submit" value="Submit" />
+                <input type="reset" value="Cancella" />
+            </form>
+        </main>
+    </body>
 </html>

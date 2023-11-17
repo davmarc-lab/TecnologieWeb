@@ -1,0 +1,67 @@
+header > h1, section, nav > ul > li > a, aside, footer {
+   font-family: monospace; 
+}
+
+header {
+    background: linear-gradient(to bottom right, pink, yellow, pink, purple);
+    padding: 30px 0px;
+    border-bottom: thick solid purple;
+    text-align: right;
+}
+
+header > h1 {
+    color: purple;
+}
+
+
+nav {
+    background: linear-gradient(to bottom right, pink, yellow, pink, purple);
+    border-bottom: thick solid purple;
+    border-top: thick solid purple;
+    float: left;
+    width: 15%;
+    margin: 10px 25px;
+    padding: 20px 5px 20px 20px;
+}
+
+nav > ul > li {
+    list-style: square;
+    margin-bottom: 10px;
+    text-align: left;
+    line-height: 2;
+}
+
+nav > ul > li > a:hover {
+    color: purple;
+}
+
+aside {
+    float: left;
+    width: 20%;
+    color: purple;
+}
+
+section {
+    float: right;
+    text-align: left;
+    width: 50%;
+    margin: 25px;
+    color: black;
+}
+
+footer {
+    float: inline-end;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    background: linear-gradient(to top left, pink, yellow, pink, purple);
+    text-align: center;
+    color: purple;
+    height: 40px;
+}
+
+footer > p {
+
+}
+

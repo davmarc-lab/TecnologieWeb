@@ -1,0 +1,7 @@
+a:hover {
+    color: red !important;
+}
+
+article header div img {
+    max-height: 200px;
+}
